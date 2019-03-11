@@ -2,13 +2,14 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        final int N = 1000000;
+        final int N = 2000000;
 
         ArrayList<Integer> a2 = new ArrayList<Integer>();
 
         long beg2 = System.currentTimeMillis();
         for (int i = 0; i < N; ++i) {
             a2.add(i);
+            // a2.add(new Integer(i)); //autoboxing
         }
         long end2 = System.currentTimeMillis();
 
@@ -23,8 +24,5 @@ public class Main {
         long end1 = System.currentTimeMillis();
 
         System.out.println(end1 - beg1);
-
-
-
     }
 }
